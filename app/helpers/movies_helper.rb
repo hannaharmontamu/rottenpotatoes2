@@ -7,4 +7,10 @@ module MoviesHelper
       content_tag(:div, "#{title} #{icon}".html_safe)
     end
   end
+
+  def column_class(column)
+    return 'sorted-asc' if session[:sort] == column && session[:direction] == 'asc'
+    return 'sorted-desc' if session[:sort] == column && session[:direction] == 'desc'
+    ''
+  end
 end

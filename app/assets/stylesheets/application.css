@@ -4,7 +4,7 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid grey;
   padding: 8px;
   text-align: left;
 }
@@ -20,7 +20,19 @@ th a.sortable-link {
     font-weight: bold; /* Keep the bold styling */
     display: block; /* Ensure the entire header cell is clickable */
     padding: 8px; /* Add padding for better clickability */
+}
+
+/* Highlight entire column - Ascending */
+th.sorted-asc, td.sorted-asc {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
   }
   
+/* Highlight entire column - Descending */
+th.sorted-desc, td.sorted-desc {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+}
+
   
   

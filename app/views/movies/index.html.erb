@@ -7,18 +7,25 @@
 <table>
   <thead>
     <tr>
-      <th><%= sortable_link('title', 'Title') %></th>
-      <th><%= sortable_link('rating', 'Rating') %></th>
-      <th><%= sortable_link('release_date', 'Release Date') %></th>
+      <th class="<%= 'sorted-asc' if session[:sort] == 'title' && session[:direction] == 'asc' %> <%= 'sorted-desc' if session[:sort] == 'title' && session[:direction] == 'desc' %>">
+        <%= sortable_link('title', 'Title') %>
+      </th>
+      <th class="<%= 'sorted-asc' if session[:sort] == 'rating' && session[:direction] == 'asc' %> <%= 'sorted-desc' if session[:sort] == 'rating' && session[:direction] == 'desc' %>">
+        <%= sortable_link('rating', 'Rating') %>
+      </th>
+      <th class="<%= 'sorted-asc' if session[:sort] == 'release_date' && session[:direction] == 'asc' %> <%= 'sorted-desc' if session[:sort] == 'release_date' && session[:direction] == 'desc' %>">
+        <%= sortable_link('release_date', 'Release Date') %>
+      </th>
       <th>Actions</th>
     </tr>
   </thead>
   <tbody>
+    <tbody>
     <% @movies.each do |movie| %>
       <tr>
-        <td><%= movie.title %></td>
-        <td><%= movie.rating %></td>
-        <td><%= movie.release_date %></td>
+        <td class="<%= column_class('title') %>"><%= movie.title %></td>
+        <td class="<%= column_class('rating') %>"><%= movie.rating %></td>
+        <td class="<%= column_class('release_date') %>"><%= movie.release_date %></td>
         <td>
           <%= link_to "Show", movie_path(movie) %> |
           <%= link_to "Edit", edit_movie_path(movie) %> |
