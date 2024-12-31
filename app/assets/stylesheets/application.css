@@ -12,3 +12,21 @@ th, td {
 th {
   background-color: #f4f4f4;
 }
+
+.sortable-link {
+    display: block; /* Makes the entire <th> cell clickable */
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+  
+  .sortable-link:hover {
+    text-decoration: underline; /* Optional hover effect */
+  }
+  
+  th {
+    cursor: pointer; /* Adds a pointer cursor for clickable headers */
+    text-align: left; /* Keeps the alignment consistent */
+  }
+  
+  
