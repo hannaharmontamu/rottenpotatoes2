@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -9,12 +15,30 @@ th, td {
   text-align: left;
 }
 
+.btn-submit, a {
+    font-family: 'Roboto Mono', monospace; /* Use your custom font */
+  font-size: 16px; /* Adjust font size */
+  color: #007bff; /* Link color */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  text-decoration: underline; /* Add underline like a normal link */
+  cursor: pointer; /* Pointer cursor for clickable action */
+  display: inline; /* Inline style like a normal link */
+}
+  
+  /* Hover Effect */
+.btn-submit:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
 th {
   background-color: #f4f4f4;
 }
 
 /* Ensure sortable links in table headers have no underline */
-th a.sortable-link {
+th a.sortable-link  {
     text-decoration: none;
     color: inherit; /* Ensure it inherits the table header color */
     font-weight: bold; /* Keep the bold styling */
