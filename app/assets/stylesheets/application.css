@@ -13,20 +13,14 @@ th {
   background-color: #f4f4f4;
 }
 
-.sortable-link {
-    display: block; /* Makes the entire <th> cell clickable */
+/* Ensure sortable links in table headers have no underline */
+th a.sortable-link {
     text-decoration: none;
-    color: inherit;
-    padding: 10px;
-}
-  
-  .sortable-link:hover {
-    text-decoration: underline; /* Optional hover effect */
+    color: inherit; /* Ensure it inherits the table header color */
+    font-weight: bold; /* Keep the bold styling */
+    display: block; /* Ensure the entire header cell is clickable */
+    padding: 8px; /* Add padding for better clickability */
   }
   
-  th {
-    cursor: pointer; /* Adds a pointer cursor for clickable headers */
-    text-align: left; /* Keeps the alignment consistent */
-  }
   
   
