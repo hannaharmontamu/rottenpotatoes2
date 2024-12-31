@@ -1,22 +1,38 @@
 <div id="<%= dom_id movie %>">
-  <p>
-    <strong>Title:</strong>
-    <%= movie.title %>
-  </p>
+  <div class="group">
+    <p>
+      <strong>Title:</strong>
+    </p>
+    <p>
+      <%= movie.title %>
+    </p>
+  </div>
 
-  <p>
-    <strong>Rating:</strong>
-    <%= movie.rating %>
-  </p>
+  <div class="group">
+    <p>
+      <strong>Rating:</strong>
+    </p>
+    <p>
+      <%= movie.rating %>
+    </p>
+  </div>
 
-  <p>
-    <strong>Description:</strong>
-    <%= movie.description %>
-  </p>
+  <div class="group">
+    <p>
+      <strong>Description:</strong>
+    </p>
+    <p>
+      <%= movie.description %>
+    </p>
+  </div>
 
+  <div class="group">
   <p>
     <strong>Release date:</strong>
+  </p>
+  <p>
     <%= movie.release_date %>
   </p>
+  </div>
 
 </div>

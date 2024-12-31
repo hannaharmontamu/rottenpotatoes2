@@ -35,6 +35,15 @@ th, td {
   display: inline; /* Inline style like a normal link */
 }
 
+.group {
+    margin-bottom:20%;
+}
+  
+  /* Spacing Between Form Fields */
+  form div {
+    margin-bottom: 30px; /* Increased space between form fields */
+  }
+
 th {
   background-color: #f4f4f4;
 }
