@@ -26,12 +26,6 @@ th, td {
   cursor: pointer; /* Pointer cursor for clickable action */
   display: inline; /* Inline style like a normal link */
 }
-  
-  /* Hover Effect */
-.btn-submit:hover {
-    text-decoration: none; /* Remove underline on hover */
-    color: #0056b3; /* Darker blue on hover */
-}
 
 th {
   background-color: #f4f4f4;
@@ -57,6 +51,42 @@ th.sorted-desc, td.sorted-desc {
     background-color: #f8d7da; /* Light red background */
     color: #721c24; /* Dark red text */
 }
+
+/* Centering Entire View Content */
+.centered-container {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Fill the viewport height */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box;
+  }
+  
+  /* Form Styling */
+  .form-container {
+    margin: 20px 0; /* Add space above and below the form */
+  }
+  
+  /* Heading Styling */
+  .centered-container h1 {
+    font-family: 'Roboto Mono', monospace; /* Match the font style */
+    margin-bottom: 20px; /* Add spacing below the heading */
+  }
+  
+  /* Back Link Styling */
+  .centered-container .monospace-link {
+    font-family: 'Roboto Mono', monospace;
+    color: #007bff; /* Link color */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .centered-container .monospace-link:hover {
+    color: #0056b3; /* Darker color on hover */
+    text-decoration: none;
+  }
 
   
   
